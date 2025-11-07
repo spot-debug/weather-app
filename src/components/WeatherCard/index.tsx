@@ -187,14 +187,7 @@ const WeatherCard: React.FC<WeatherCardProps> = ({ weatherData, temperatureUnit,
         </motion.div>
       </div>
 
-      <style jsx>{`
-        .rain-animation {
-          position: absolute;
-          inset: 0;
-          overflow: hidden;
-        }
-      `}</style>
-    </motion.div>
+      </motion.div>
   );
 };
 
