@@ -54,11 +54,11 @@ const WeatherDisplay: React.FC<WeatherDisplayProps> = ({ weatherData, temperatur
   };
 
   const formatWindSpeed = (speed: number): string => {
-    return temperatureUnit === 'imperial' ? `${speed} mph` : `${speed} m/s`;
+    return temperatureUnit === 'fahrenheit' ? `${speed} mph` : `${speed} m/s`;
   };
 
   const formatVisibility = (visibility: number): string => {
-    return temperatureUnit === 'imperial' ? `${Math.round(visibility * 0.621371)} mi` : `${visibility} km`;
+    return temperatureUnit === 'fahrenheit' ? `${Math.round(visibility * 0.621371)} mi` : `${visibility} km`;
   };
 
   const formatPressure = (pressure: number): string => {
