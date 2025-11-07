@@ -1,6 +1,7 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { searchLocation, getUserLocation, validateSearchInput, Location } from '../../services/geocodingApi';
+import { searchLocation, getUserLocation, validateSearchInput } from '../../services/geocodingApi';
+import { Location } from '../../types/weather';
 
 interface SearchBarProps {
   onLocationSelect: (location: Location) => void;
