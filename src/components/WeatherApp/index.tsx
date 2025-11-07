@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { motion, AnimatePresence } from 'framer-motion';
 import { getCompleteWeatherData } from '../../services/weatherApi';
-import { Location, WeatherData, TemperatureUnit } from '../../types/weather';
+import { Location, TemperatureUnit } from '../../types/weather';
 
 // Import components
 import SearchBar from '../SearchBar';
