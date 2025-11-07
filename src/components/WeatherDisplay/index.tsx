@@ -119,12 +119,7 @@ const WeatherDisplay: React.FC<WeatherDisplayProps> = ({ weatherData, temperatur
               <div className={`absolute -top-1 -right-1 w-2 h-2 bg-yellow-500 rounded-full ${current.uvIndex > 5 ? 'animate-pulse' : ''}`}></div>
             </div>
           }
-          value={
-            <div className="flex flex-col items-center">
-              <span className="text-2xl font-bold">{current.uvIndex}</span>
-              <span className={`text-xs font-medium ${uvInfo.color}`}>{uvInfo.level}</span>
-            </div>
-          }
+          value={String(current.uvIndex)}
           label="UV Index"
           delay={0.9}
         />
