@@ -41,7 +41,7 @@ const WeatherApp: React.FC = () => {
     queryKey: ['weatherData', selectedLocation, temperatureUnit],
     queryFn: () => {
       if (!selectedLocation) throw new Error('No location selected');
-      return getCompleteWeatherData(selectedLocation, temperatureUnit);
+      return getCompleteWeatherData(selectedLocation, temperatureUnit === 'celsius' ? 'metric' : 'imperial');
     },
     enabled: !!selectedLocation,
     staleTime: 5 * 60 * 1000, // 5 minutes
